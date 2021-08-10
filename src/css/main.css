@@ -14,14 +14,17 @@ html {
 body {
   background: linear-gradient(
     190deg,
-    rgb(134, 123, 205) 0%,
-    rgb(106, 90, 171) 100%
-  );
+    rgba(3, 12, 90, 0.952) 0%,
+    rgb(26, 0, 129) 100%
+  )
+
+  ;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #222;
   overflow: hidden;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/74e11870600291.5ba925593f668.jpg");
 }
 
 .App {
@@ -56,6 +59,7 @@ body {
 
   align-self: center;
 }
+
 .todo-input:focus {
   outline: none;
   border: 2px solid rgb(67, 58, 168);
@@ -99,9 +103,10 @@ body {
   cursor: pointer;
   border: none;
 }
+.displaytodos .buttons button:hover{
+  background-color: rgba(2, 33, 207, 0.822);
+  color: white;
 
-.displaytodos .buttons button:focus {
-  outline: none;
 }
 
 .displaytodos .buttons button:not(:last-child) {
@@ -134,6 +139,7 @@ body {
 
   position: relative;
 }
+
 
 .card textarea {
   padding: 0.5rem;
@@ -180,6 +186,7 @@ body {
   padding: 0.3rem 1rem;
   border-radius: 20px;
 }
+
 
 @media Screen and (max-width: 640px) {
   .displaytodos {
